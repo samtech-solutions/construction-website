@@ -293,4 +293,9 @@ margin-top:0.2rem;
     html{
          font-size:50%;
      }
+     .search-form input{
+        width:60%;
+        margin-left:60px;
+        
+     }
  }
