@@ -11,7 +11,6 @@ document.querySelector('#search-btn').onclick = () =>{
 
 window.onscroll = () =>{
     navBar.classList.remove('active'); 
-};
-window.onscroll = () =>{
+    
     searchForm.classList.remove('active'); 
 };

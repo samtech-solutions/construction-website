@@ -131,7 +131,7 @@ html{
     transition: all .2s ease-out;
 }
 
-active{
+.active{
     display:flex;
 }
 .search-form input{
@@ -201,6 +201,11 @@ active{
  .header .navbar a{
     display:block;
     margin:2rem;
+}
+.search-form input{
+    width:70%;
+    margin-left:50px;
+    
 }
 }
 
