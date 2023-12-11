@@ -295,7 +295,14 @@ margin-top:0.2rem;
      }
      .search-form input{
         width:60%;
-        margin-left:60px;
-        
+        margin-left:40px;  
+     }
+     .contact-info{
+        position:fixed;
+        width:100%;
+        background:var(--white);
+        height:100%;
+        text-align:center;
+        box-shadow:0 0 0 100vw rgba(0,0,0,.7);
      }
  }
