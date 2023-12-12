@@ -421,7 +421,6 @@ section{
 .projects .box .content{
         display:flex;
         gap:1rem;
-     
         justify-content: space-between;
     }
  .projects .box .content .info{
@@ -440,10 +439,124 @@ section{
     line-height: .9;  
 }
 
+.reviews .slider p{
+    padding:1.5rem;
+    background: var(--light-bg);
+    position:relative;
+    margin-bottom: -2rem;
+    font-size:1.5rem;
+    color:rgb(10, 75, 150);
+    line-height: 1; 
 
+     &::before{
+        content: '';
+        position:absolute;
+        bottom:-1rem;
+        left:2rem;
+        height:2rem;
+        width:2rem;
+        background:var(--light-bg);
+        transform:rotate(45deg);
+     }
+}
+.reviews .user{
+    display:flex;
+    align-items:center;
+    gap:1.5rem;
+}
+.user img{
+    height:9rem;
+    width:9rem;
+    border-radius: 4px;
+}
+.user .info h3{
+    font-size:2rem;
+    color:var(--black);
+    text-transform:capitalize;    
+    padding:1rem 0;
+}
+.user .info .stars{
+   padding-top: .2rem;
+   margin-bottom: 5rem;
+}
+.user .info .stars .fas{
+    font-size: 1.2rem;
+    color:var(--yellow);
+    background: none !important;
+ }
+.footer{
+    width:100%;
+    height:50px !important;
+    font-size:15px;
+    background: var(--black);
+    color:#fff;
+}
+.footer p{
+    margin-bottom: 5px;
+    text-align: center;
+}
+.contact{
+    background: var(--black);
+}
+.contact .heading{
+    font-size:2.5rem;
+    color:var(--white);
+    text-transform:capitalize;
+}
+.contact .row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:3rem;
+}
+.contact .row .map{
+    flex:1 1 41rem;
+    width:100%;
+}
 
+form{
+    flex:1 1 41rem;
+    background: var(--white);
+    padding:1rem;
+}
+form h3{
+    font-size:2.5rem;
+    color:var(--yellow);
+    text-transform:capitalize;
+    padding-bottom:1rem;
+}
+.contact .row .box{
+    margin: 0.7rem 0.6rem;
+    text-align: left;
+    width:100%;
+    padding:1.5rem 0;
+    border-bottom: var(--border);
+    font-size:1.6rem;
+    background: white;
+    color:var(--light-color);
 
+    &:focus{
+        background: var(--yellow);
+        
+    }
+}
+textarea{
+    width:100%;
+    margin: 0.7rem 0.6rem;
+    padding:1.5rem 0;
+    height: 15rem;
+    resize:none;
+    border-bottom: var(--border);
+    font-size:1.6rem;
+    color:var(--light-color);
+}
 
+form .btn{
+    background:rgb(145, 145, 205);
+    width:100%;
+    color:#fff;
+    height:40px;
+    border-radius: 10px;
+}
 
                                        /*MEDIA QUERY*/
 
@@ -535,7 +648,7 @@ section{
     .projects .box-container{
         margin-top: 3rem;
         display:grid;
-        grid-template-columns:50% 50%;
+        grid-template-columns:48% 48%;
         gap:2rem;
         align-items: flex-end;
         }
@@ -560,10 +673,10 @@ section{
         box-shadow:0 0 0 100vw rgba(0,0,0,.7);
      }
      .projects .box-container{
-        margin-top: 3rem;
+        margin-top: 2rem;
         display:grid;
-        grid-template-columns:50% 50%;
-        gap:2rem;
+        grid-template-columns:45% 45%;
+        gap:1rem;
         align-items: flex-end;
         }
  }

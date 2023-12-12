@@ -30,7 +30,7 @@ window.onscroll = () =>{
     contactInfo.classList.remove('active');
 };
 
-const swiper = new Swiper('.home-slider', {
+var swiper = new swiper('.home-slider', {
   loop:true,
   grabCursor:true,
     // Navigation arrows
@@ -40,3 +40,24 @@ const swiper = new Swiper('.home-slider', {
     },
   
   });
+
+ /* var swiper = new swiper('.reviews-slider', {
+    loop:true,
+    grabCursor:true,
+    spaceBetween:20,
+
+      breakpoints: {
+        640:{
+            slidesPerView:1,
+        },
+        768:{
+            slidesPerView:2,
+           
+        },
+        991:{
+            slidesPerView:3,
+           
+        },
+      },
+    });*/
+    
