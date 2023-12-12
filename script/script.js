@@ -28,3 +28,14 @@ window.onscroll = () =>{
     searchForm.classList.remove('active'); 
     contactInfo.classList.remove('active');
 };
+
+const swiper = new Swiper('.home-slider', {
+  loop:true,
+  grabCursor:true,
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+  });

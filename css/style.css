@@ -9,7 +9,7 @@
     --border:.1rem solid rgba(0,0,0,.3);
 }
 *{
-    font-family: 'Roboto',sans-serif;
+    font-family: 'POPPINS',sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -49,7 +49,7 @@
 }
 html{
     font-size:62.5%;
-    overflow:hidden;
+    overflow:scroll;
     scroll-behavior:smooth;
     scroll-padding-top:7rem;
 
@@ -79,7 +79,8 @@ html{
     display:flex;
     align-items:center;
     justify-content: space-between;
-    z-index:1000;   
+    z-index:1000;  
+    background: #fff; 
 }
 .logo{
     font-size:2.5rem;   
@@ -220,8 +221,66 @@ border-top: var(--border);
 margin-top:0.2rem;
 }
 
-
-
+section{
+    padding:5rem 10%;
+}
+.home{
+    padding:0;
+}
+.slide{
+    min-height: 60rem;
+    display:flex;
+    align-items: center;
+    position:relative;
+    background-size: cover !important;
+    background-position: center !important;
+}
+&::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background:linear-gradient(90deg,var(--white),transparent);
+}
+.content{
+    width:50rem;
+    position:relative;
+}
+.content h3{
+    font-size:5rem;
+    color:var(--black);
+    text-transform:uppercase;   
+}
+.content p{
+    font-size:1.8rem;
+    color:var(--black);
+    text-transform:capitalize; 
+    line-height:2;
+    padding:1rem 0;
+}
+.content .btn{
+    padding: 10px;
+    height:5rem;
+    width:8rem;
+    line-height: 3rem;
+    font-size:1.5rem;
+    background:var(--black);
+    color:var(--white);
+    cursor:pointer;
+    border-radius: 5%;
+    text-align:center; 
+    border-top: var(--border);   
+}
+.btn:hover{
+    font-size:2rem;
+}
+.swiper-button-prev,
+.swiper-button-next{
+    top:initial;
+    bottom:0;
+}
 
 
 
@@ -234,6 +293,9 @@ margin-top:0.2rem;
     .header{
         padding:1.5rem 2rem;
     }
+    section{
+        padding:3rem 5%;
+    }
 }
 
 
@@ -245,7 +307,9 @@ margin-top:0.2rem;
     .icons #menu-btn{  
      display:inline-block;  
     }
-  
+    section{
+        padding:3rem 2rem;
+    }
     .header .navbar{
     position:absolute;
     top:99%;
@@ -254,7 +318,7 @@ margin-top:0.2rem;
     background:var(--white);
     border-top:var(--border);
     border-bottom:var(--border);
-    /*clip-path: polygon(0 0,100% 0,100% 0,0 0); */  
+    clip-path: polygon(0 0,100% 0,100% 0,0 0);   
    }
 
 .active{
