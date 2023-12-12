@@ -159,7 +159,7 @@ html{
    position:fixed;
    top:0;
    right:0;
-   width:34rem;
+   width:100%;
    background:var(--white);
    height:100%;
    text-align:center;
@@ -184,10 +184,10 @@ html{
 #close-contact-info:hover{
     transform:rotate(90deg);
 }
-.info{
+.contact-info .info{
     padding:1rem 0;
 }
-.info i{
+.contact-info .info i{
 margin-bottom: .5rem;
 height:5rem;
 width:6rem;
@@ -198,18 +198,19 @@ color:var(--black);
 cursor:pointer;
 text-align:center;
 }
-.info h3{
+.contact-info .info h3{
     padding:1rem 0;
+    color:#f5bf23
 }
-.info p{
+.contact-info  .info p{
     font-size:1.5rem;
     color:var(--light-color);
     line-height: 1.5;
 }
-.share{
+.contact-info  .share{
     padding-top: 1rem;
 }
-.share a{
+.contact-info  .share a{
 margin: 0 0.3rem;
 height:3rem;
 width:3rem;
