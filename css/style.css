@@ -254,9 +254,9 @@ margin-top:0.2rem;
     background:var(--white);
     border-top:var(--border);
     border-bottom:var(--border);
-    clip-path: polygon(0 0,100% 0,100% 0,0 0);
-      
-}
+    /*clip-path: polygon(0 0,100% 0,100% 0,0 0); */  
+   }
+
 .active{
     clip-path: polygon(0 0,100% 0,100% 100%,0 100%); 
     
