@@ -1,3 +1,4 @@
+
 let navBar = document.querySelector('.header .navbar');
 let searchForm = document.querySelector('.header .search-form'); 
 let contactInfo = document.querySelector('.contact-info');
