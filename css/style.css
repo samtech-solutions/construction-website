@@ -455,7 +455,7 @@ section{
 }
 
 /*media query 768px screen*/
-@media(max-width:768px){
+@media(max-width:719px){
     html{
          font-size:50%;
      }
@@ -471,7 +471,7 @@ section{
      .box-container{
         margin-top: 3rem;
         display:grid;
-        grid-template-columns:auto auto;
+        grid-template-columns:50% 50%;
         gap:2rem;
         
     }
