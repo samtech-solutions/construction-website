@@ -229,13 +229,8 @@ section{
     padding:0;
 }
 
-/*------------------------- Site Title-----------------------------*/
-
-
-/*------------xxxxxx---------- Site Title---------xxxxx------------*/
-
 .slide{
-    min-height: 60rem;
+    min-height: 100vh;
     display:flex;
     align-items: center;
     position:relative;
@@ -256,7 +251,7 @@ section{
     position:relative;
 }
 .content h3{
-    font-size:4rem;
+    font-size:5rem;
     color:var(--black);
     text-transform:uppercase;   
 }
@@ -265,12 +260,12 @@ section{
     color:var(--black);
     text-transform:capitalize; 
     line-height:2;
-    padding:1rem 0;
+    padding:3rem 0;
 }
 
 .content .btn{
     padding: 10px;
-    height:5rem;
+    height:6rem;
     width:8rem;
     line-height: 3rem;
     font-size:1.5rem;
