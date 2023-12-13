@@ -83,12 +83,14 @@ html{
     z-index:1000;  
     background: #fff; 
 }
+
 .logo{
     font-size:2.5rem;   
  }
  span{
      color:var(--yellow);
  }
+
 .navbar a{
     font-size: 2rem;
     margin:0 1rem; 
@@ -96,22 +98,25 @@ html{
 
 .navbar a:hover{
      color:var(--yellow); 
-     border-bottom: 4px solid rgb(45, 17, 17);  
+     border-bottom: 1px solid rgb(45, 17, 17); 
+     font-size: 2.2rem; 
 }
+.header .navbar.active{
+    top:100%;
+  }
 
-.icons div{
+.icons i{
     margin-left:.3rem;
     height:5rem;
     width:5rem;
     line-height: 5rem;
     font-size:2rem;
-    background:var(--light-bg);
     color:var(--black);
     cursor:pointer;
     text-align:center;
 }
-.icons div:hover{
-    background:var(--black);
+.icons i:hover{
+    background:var(--yellow);
     color:var(--white); 
 }
 #menu-btn{
@@ -131,7 +136,7 @@ html{
     align-items:center;
     gap:1rem;
     display:none;
-    transition: all .2s ease-out;
+    transition: all .2s linear;
 }
 
 .active{
@@ -158,7 +163,7 @@ html{
 .contact-info{
    position:fixed;
    top:0;
-   right:0;
+   right:10px;
    width:100%;
    background:var(--white);
    height:100%;
@@ -211,7 +216,7 @@ text-align:center;
     padding-top: 1rem;
 }
 .contact-info  .share a{
-margin: 0 0.3rem;
+margin:0 0.3rem;
 height:3rem;
 width:3rem;
 line-height: 3rem;
@@ -591,25 +596,27 @@ hr{
     font-size:55%;
     }
     .icons #menu-btn{  
-     display:inline-block;  
+     display:initial;  
     }
     section{
         padding:3rem 2rem;
     }
     .header .navbar{
-    position:absolute;
-    top:99%;
+    position:absolute; 
+    width:90%;
     left:0;
+    top:-1000%;
     right:0;
     background:var(--white);
     border-top:var(--border);
     border-bottom:var(--border);
-    clip-path: polygon(0 0,100% 0,100% 0,0 0);   
+    box-shadow:rgba(0,0,0,.24) 0px 3px 8px;
+    border-radius: 0px 15px 15px 15px;
+    transition:all 1.0s ease-in-out;
    }
 
-.active{
-    clip-path: polygon(0 0,100% 0,100% 100%,0 100%); 
-    
+.header .navbar .active{
+   top:100%;
  }
 
  .header .navbar a{
@@ -631,7 +638,7 @@ hr{
  }
 }
 
-/*media query 768px screen*/
+/*media query 719px screen*/
 @media(max-width:719px){
     html{
          font-size:50%;
@@ -652,6 +659,7 @@ hr{
         gap:2rem;
         
     }
+  
     .services .box-container{
         margin-top: 3rem;
         display:grid;

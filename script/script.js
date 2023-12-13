@@ -30,34 +30,6 @@ window.onscroll = () =>{
     contactInfo.classList.remove('active');
 };
 
-var swiper = new swiper('.home-slider', {
-  loop:true,
-  grabCursor:true,
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-  });
 
- /* var swiper = new swiper('.reviews-slider', {
-    loop:true,
-    grabCursor:true,
-    spaceBetween:20,
 
-      breakpoints: {
-        640:{
-            slidesPerView:1,
-        },
-        768:{
-            slidesPerView:2,
-           
-        },
-        991:{
-            slidesPerView:3,
-           
-        },
-      },
-    });*/
     
